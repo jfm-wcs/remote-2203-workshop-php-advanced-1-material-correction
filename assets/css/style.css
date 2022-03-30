@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+form.form-recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    form.form-recipe {
+        flex-direction: row;
+        padding: 3rem;
+    }
+}
+
+form.form-recipe button {
+    align-self: flex-end;
+}
+
+p.form-info {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    p.form-info {
+        display: initial;
+    }
+}
